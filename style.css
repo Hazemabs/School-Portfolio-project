@@ -12,6 +12,13 @@ header {
   position: fixed;
   z-index: 1;
 }
+body {
+  background-image: url(/img/bg.jpg);
+  /* background-position: center; */
+  background-size:cover ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 h1 {
   font-family: "Fuzzy Bubbles", cursive;
 }
@@ -22,7 +29,7 @@ h1 {
   justify-content: space-between;
   padding: 10px;
   padding-right: 30px;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.6);
   color: #ffffff;
   height: 100px;
   z-index: 100;
@@ -82,9 +89,8 @@ label {
 }
 section {
   width: 100%;
-  background-color: #000;
   z-index: 0;
-  
+  background-color: transparent;
 }
 
 @media screen and (min-width: 940px) {
@@ -105,12 +111,13 @@ section {
   display: flex;
   flex-direction: column;
   color: #ffffff;
-  background-color: black;
-  background-image: url(/img/background.jpg);
-  /* background-image: url(https://cdn.pixabay.com/photo/2016/10/12/19/50/matrix-1735640_960_720.jpg); */
+  /* background-image: url(https://images.unsplash.com/photo-1458682625221-3a45f8a844c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzB8fHBvcnRmb2xpb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60); */
   background-position: center;
   background-size: cover;
   height: 500px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
 }
 .hero div {
   margin-top: auto;
@@ -151,6 +158,11 @@ h2 {
   cursor: pointer;
   transition: all 0.25s ease;
 }
+.hero .contact-btn:hover {
+background-color: #fff;
+color: rgb(19, 48, 19);
+}
+
 /* cards Section */
 
 .card {
@@ -173,18 +185,7 @@ h3 {
   font-size: 2rem;
   color: rgb(235, 241, 235);
 }
-/* 
-.card .content p {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex-direction: column;
-  font-size: 1rem;
-  opacity: 0;
-  margin-bottom: -160px;
-  transition: all 0.25s ease;
-  font-family: "Ubuntu", sans-serif;
-} */
+
 .card .content p button {
   padding: 8px 18px;
   border-radius: 10px;
@@ -242,6 +243,22 @@ h3 {
   background: #fff;
   color: #000;
 }
+/* Specialties */
+.spacialties-wrapper {
+  height: 200px;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+text-align: center;
+
+background-color: rgba(19, 48, 19, 0.534);
+}
+.icon-wrapper {
+}
+.fa-brands {
+  padding: 20px;
+  font-size: 2rem;
+}
 /* about me  */
 .about-me {
   padding-top: 30px;
@@ -276,7 +293,7 @@ a {
 }
 
 footer {
-  background-color: black;
+  /* background-color: black; */
   text-align: center;
   text-transform: uppercase;
   padding-top: 30px;

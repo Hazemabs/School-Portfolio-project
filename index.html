@@ -36,18 +36,18 @@
             ><input type="checkbox" />
             <nav class="small-screen">
               <ul>
-                <li><a>Home</a></li>
-                <li><a>About me</a></li>
-                <li><a>Contact</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#specialties"></a>Specialties</li>
               </ul>
             </nav>
             <i class="fa-sharp fa-solid fa-bars"></i
           ></label>
         </div>
         <nav class="nav-bar">
-          <a href="#">Home</a>
-          <a href="#">About me</a>
-          <a href="#">Contact</a>
+          <a href="#about">About me</a>
+          <a href="#contact">Contact</a>
+          <a href="#specialties">Specialties</a>
         </nav>
       </div>
     </header>
@@ -69,19 +69,20 @@
           <div class="content">
             <h3>Wrap Clup</h3>
             <p>
-              <button>See more...</button>
+              <a href="https://hazemabs.github.io/wrap-club/" target="_blank"> <button>See more...</button></a>
+
             </p>
           </div>
         </div>
         <div class="card">
           <img
-            src="https://images.unsplash.com/photo-1518057111178-44a106bad636?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb"
+            src="/img/zoom call.jpg"
             alt=""
           />
           <div class="content">
-            <h3>One of my projects</h3>
+            <h3>Zoom <br> call</h3>
             <p>
-              <button>See more...</button>
+            <a href=" https://hazemabs.github.io/zoom-call/" target="_blank"><button>See more...</button></a>
             </p>
           </div>
         </div>
@@ -100,8 +101,18 @@
       </div>
     
     </section>
+    <!-- Specialties -->
+    <div id="specialties" class="spacialties-wrapper">
+      <h2>Specialties</h2>
+      <div class="icon-wrapper">
+        <i class="fa-brands fa-html5"></i>
+        <i class="fa-brands fa-css3"></i>
+        <i class="fa-brands fa-bootstrap"></i>
+        <i class="fa-brands fa-sass"></i>
+      </div>
+    </div>
     <!-- about me section  -->
-    <div class="about-me">
+    <div id="about" class="about-me">
       <div class="container">
       <h2>about me</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eos,lkjsd kosjdg kjöj efkjfpöjwge ksjäaier klkasödlagj</p>
@@ -126,11 +137,10 @@
           </ion-icon></a>
         </li>
       </ul>
-      <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+      <ul id="contact" class="menu">
+        <li><a href="#about">About Me</a></li>
         <li><a href="#">Specialties</a></li>
-        <li><a href="#">Contact Us</a></li>
+        
       </ul>
       <div class="footer-copyright">
         <p>Copyright @ 2022 All Rights Reserved.</p>
