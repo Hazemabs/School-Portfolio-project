@@ -37,6 +37,7 @@ h1 {
 
 .nav-bar {
   display: none;
+  font-family: 'Noto Sans Mono', monospace;
 }
 .nav-bar a {
   padding: 20px;
