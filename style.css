@@ -43,6 +43,11 @@ h1 {
   text-decoration: none;
   color: #ffffff;
 }
+.nav-bar a:hover{
+  color: #ebdede;
+  transition: 0.2s;
+  text-shadow: rgb(14, 13, 13);
+}
 .full-screen a {
   text-decoration: none;
 }
@@ -53,20 +58,23 @@ h1 {
 .small-screen {
   display: none;
   transition: all 2s ease-in;
+  margin-top: 40px;
+  color: #fff;
 }
 .small-screen ul li {
   padding: 10px;
   border-bottom: 1px solid #ffffff;
   font-family: 'Noto Sans Mono', monospace;
-
+  color: #fff;
 }
+
 .small-screen ul li:nth-last-child(1) {
   border-bottom: none;
 }
 input:checked ~ .small-screen {
   display: block;
   position: absolute;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
   color: #ffffff;
   right: 0;
   left: 0;
@@ -124,8 +132,20 @@ section {
   padding-bottom: 60px;
    
 }
-.container {
+.container  {
   padding: 30px;
+}
+.about-me .container p {
+  font-family: "Fuzzy Bubbles", cursive;
+  font-size: 1.5rem;
+  color: rgb(19, 48, 19);
+  font-weight: bold;
+}
+.about-me .container h2{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
 }
 h2 {
   font-family: "Fuzzy Bubbles", cursive;
@@ -153,7 +173,7 @@ h2 {
   background-color: rgb(19, 48, 19);
   font-family: "Fuzzy Bubbles", cursive;
   font-size: 0.8rem;
-  margin-top: 10px;
+  margin-top: 40px;
   margin-left: auto;
   cursor: pointer;
   transition: all 0.25s ease;
@@ -196,7 +216,7 @@ h3 {
   font-family: "Fuzzy Bubbles", cursive;
   font-size: 0.8rem;
   margin-top: 10px;
-  margin-left: auto;
+  margin-left: 20px;
   cursor: pointer;
   transition: all 0.25s ease;
 }
@@ -250,8 +270,11 @@ display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 text-align: center;
+background-color:rgba(19, 48, 19, 0.534);
+}
 
-background-color: rgba(19, 48, 19, 0.534);
+.spacialties-wrapper h2 {
+  color: #ffffff;
 }
 .icon-wrapper {
 }
@@ -260,13 +283,15 @@ background-color: rgba(19, 48, 19, 0.534);
   font-size: 2rem;
 }
 /* about me  */
+
 .about-me {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-top: auto;
-
-  font-family: "Fuzzy Bubbles", cursive;
-
+ display: flex;
+ flex-direction: column;
+ background-position: center;
+ background-size: cover;
+ height: 300px;
+ justify-content: center;
+ align-items: center;
 }
 
 
